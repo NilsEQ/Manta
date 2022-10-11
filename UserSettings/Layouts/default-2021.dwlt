@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 13738
+  controlID: 3059
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 13721
+  controlID: 3060
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 13722
+  controlID: 3061
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -399,9 +399,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 90e5ffff
-      m_LastClickedID: -6768
-      m_ExpandedIDs: 90e5ffff80e8ffffd0e8ffff40eaffff90eaffffeceaffff16edffff6cf6ffff3afbffff
+      m_SelectedIDs: 5eb5ffff
+      m_LastClickedID: -19106
+      m_ExpandedIDs: deb9ffff54cbffffb0cdffffb2ceffff448a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -417,7 +417,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 8}
+        m_ClientGUIView: {fileID: 10}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -650,9 +650,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -10.216958, y: 0.14713654, z: 1.3107598}
+    m_Target: {x: -2.893393, y: -1.7031097, z: 1.2381003}
     speed: 2
-    m_Value: {x: -10.216958, y: 0.14713654, z: 1.3107598}
+    m_Value: {x: -2.893393, y: -1.7031097, z: 1.2381003}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -662,7 +662,7 @@ MonoBehaviour:
   m_DoValidateTrueMetals: 0
   m_ExposureSliderValue: 0
   m_SceneViewState:
-    m_AlwaysRefresh: 0
+    m_AlwaysRefresh: 1
     showFog: 1
     showSkybox: 1
     showFlares: 1
@@ -699,13 +699,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+    m_Target: {x: -0.055685278, y: 0.93848866, z: -0.18097664, w: -0.28876674}
     speed: 2
-    m_Value: {x: -0.7071068, y: 0, z: -0, w: -0.7071068}
+    m_Value: {x: -0.054982636, y: 0.93919104, z: -0.17965135, w: -0.28744143}
   m_Size:
-    m_Target: 1.944181
+    m_Target: 7.5438113
     speed: 2
-    m_Value: 1.944181
+    m_Value: 7.8992786
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -771,22 +771,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/KriptoFX/WaterSystem/Demo/VolumeLight
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/KriptoFX/WaterSystem/Demo/VolumeLight
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\nils.quaetaert\Documents\Manta
+  m_LastProjectPath: C:\Users\nils.quaetaert\Documents\Manta1\Manta
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 045a0000
-    m_LastClickedID: 23044
-    m_ExpandedIDs: 00000000045a000000ca9a3b
+    scrollPos: {x: 0, y: 14.199951}
+    m_SelectedIDs: 368c0000
+    m_LastClickedID: 35894
+    m_ExpandedIDs: 000000000c8a0000108a0000248c0000268c00002a8c0000308c00003c8c0000408c0000428c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -814,7 +814,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000045a000000ca9a3b
+    m_ExpandedIDs: 000000000c8a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -841,7 +841,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000bc590000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
