@@ -472,7 +472,7 @@ MonoBehaviour:
   ShorelineCurvedSurfacesQuality: 1
   OrthoDepthAreaSize: 512
   OrthoDepthTextureResolution: 2048
-  UseCausticEffect: 1
+  UseCausticEffect: 0
   ShowCausticEffectSettings: 1
   UseCausticBicubicInterpolation: 1
   UseCausticDispersion: 1
@@ -491,11 +491,11 @@ MonoBehaviour:
   UseHighQualityUnderwater: 1
   UseUnderwaterBlur: 1
   UnderwaterResolutionScale: 1
-  UnderwaterBlurRadius: 0.25
+  UnderwaterBlurRadius: 0.51
   ShowRendering: 1
   WaterMeshType: 1
   UseFiltering: 1
-  AnisotropicFiltering: 0
+  AnisotropicFiltering: 2
   OffscreenRendering: 0
   OffscreenRenderingAA: 4
   OffscreenRenderingResolution: 1
@@ -509,7 +509,7 @@ MonoBehaviour:
   currentCamera: {fileID: 0}
   tempGameObject: {fileID: 0}
   BakedFluidsSimPercentPassed: 0
-  currentWaterMesh: {fileID: 1905791439}
+  currentWaterMesh: {fileID: 1811122842}
 --- !u!4 &327349990
 Transform:
   m_ObjectHideFlags: 0
@@ -1147,15 +1147,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42e8d010c3a294948b8c64ea855e1c30, type: 3}
       propertyPath: m_LocalScale.x
-      value: 320.40955
+      value: 241.11139
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42e8d010c3a294948b8c64ea855e1c30, type: 3}
       propertyPath: m_LocalScale.y
-      value: 320.40955
+      value: 241.11139
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42e8d010c3a294948b8c64ea855e1c30, type: 3}
       propertyPath: m_LocalScale.z
-      value: 320.40955
+      value: 241.11139
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42e8d010c3a294948b8c64ea855e1c30, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1163,11 +1163,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42e8d010c3a294948b8c64ea855e1c30, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.99
+      value: -2.5296
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42e8d010c3a294948b8c64ea855e1c30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.27
+      value: -0.149
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42e8d010c3a294948b8c64ea855e1c30, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1644,7 +1644,7 @@ MonoBehaviour:
   BlitAddShader: {fileID: 4800000, guid: c2282c5842bb6d74d999852919953d40, type: 3}
   BilateralBlurShader: {fileID: 4800000, guid: d297a5d5cdd4e7f469b33e9f468e00d1, type: 3}
   VolumetricLightShader: {fileID: 4800000, guid: f1531a9bd4087ff468de8de09f6ba126, type: 3}
---- !u!43 &1905791439
+--- !u!43 &1811122842
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1821,27 +1821,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c90b975ac7b8a1a418d6314031c5bf39, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1080.2183
+      value: 612.37573
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c90b975ac7b8a1a418d6314031c5bf39, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1080.2183
+      value: 612.37573
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c90b975ac7b8a1a418d6314031c5bf39, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1080.2183
+      value: 612.37573
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c90b975ac7b8a1a418d6314031c5bf39, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.772628
+      value: 1.9375
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c90b975ac7b8a1a418d6314031c5bf39, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.587
+      value: -0.863
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c90b975ac7b8a1a418d6314031c5bf39, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.058077306
+      value: 0.093
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c90b975ac7b8a1a418d6314031c5bf39, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1872,6 +1872,10 @@ PrefabInstance:
       value: -103.218
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c90b975ac7b8a1a418d6314031c5bf39, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c90b975ac7b8a1a418d6314031c5bf39, type: 3}
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
@@ -1880,9 +1884,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c90b975ac7b8a1a418d6314031c5bf39, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c90b975ac7b8a1a418d6314031c5bf39, type: 3}
       propertyPath: m_LightProbeUsage
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c90b975ac7b8a1a418d6314031c5bf39, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a68a4f906ddb9474593ba3a1572b82ff, type: 2}
     - target: {fileID: 919132149155446097, guid: c90b975ac7b8a1a418d6314031c5bf39, type: 3}
       propertyPath: m_Name
       value: MonsieurRay
