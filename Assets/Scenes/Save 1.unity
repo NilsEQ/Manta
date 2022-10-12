@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 127105478}
+  - component: {fileID: 127105479}
   m_Layer: 0
   m_Name: Sound
   m_TagString: Untagged
@@ -154,6 +155,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &127105479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127105477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a3b78117fea7044802f0e9587776f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 3af98a9d9e63110478239264d6a307f9, type: 3}
+  volume: 0.065
+  pitch: 0.1
 --- !u!4 &241935192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c90b975ac7b8a1a418d6314031c5bf39, type: 3}
@@ -246,6 +262,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.005
+  maxheight: 0
+  minheight: 0
+  goodheight: 0
 --- !u!4 &1303589892
 Transform:
   m_ObjectHideFlags: 0
