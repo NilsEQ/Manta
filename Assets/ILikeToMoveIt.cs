@@ -6,6 +6,9 @@ using UnityEngine;
 public class ILikeToMoveIt : MonoBehaviour
 {
     public float speed = 0.01f;
+    public float maxheight;
+    public float minheight;
+    public float goodheight;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +19,6 @@ public class ILikeToMoveIt : MonoBehaviour
     void Update()
     {
         transform.Rotate(0, 0.01f, 0);
-        transform.position += speed * transform.forward;
+        transform.position += speed * 0.01f * transform.forward;
     }
 }
