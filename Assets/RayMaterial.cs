@@ -6,8 +6,8 @@ using UnityEngine;
 public class RayMaterial : MonoBehaviour
 {
     public Material VanGoghMat;
-
     public Material CourbetMat;
+    private Material nextMat;
 
     [SerializeField] GameObject mesh;
     SkinnedMeshRenderer meshRenderer;
@@ -19,26 +19,18 @@ public class RayMaterial : MonoBehaviour
     void Start()
     {
         meshRenderer = mesh.GetComponent<SkinnedMeshRenderer>();
-        Debug.Log(CourbetMat);
-        meshRenderer.material = CourbetMat  ;
-        Debug.Log(meshRenderer.materials[0]);
+        meshRenderer.material = VanGoghMat;
 
         particles = GetComponent<ParticleSystem>();
+
+        nextMat = CourbetMat;
     }
 
-    void Update()
-    {
-        t += Time.deltaTime;
 
-        if ( t > 10 && !done)
-        {
-            done = true;
-            StartCoroutine(changeMat(VanGoghMat));
-        }
-    }
 
-    IEnumerator changeMat(Material newmat)
+    public IEnumerator changeMat()
     {
+        
         Material oldMat = meshRenderer.material;
         Color mycol = oldMat.GetColor("_EmissionColor");
         
@@ -49,9 +41,11 @@ public class RayMaterial : MonoBehaviour
 
         }
 
-        meshRenderer.material = newmat;
+        meshRenderer.material = nextMat;
         particles.Play();
         oldMat.SetColor("_EmissionColor", mycol);
+
+        nextMat = oldMat;
     }
 }
 
