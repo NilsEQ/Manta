@@ -72,7 +72,6 @@ namespace Aura2API
         private void OnGUI()
         {
             GUI.color = Color.white;
-            GUI.Label(new Rect(0, 0, Screen.width, Screen.height), "Mean FPS over " + interval + " second(s) = " + _meanFps + "\nRaw FPS = " + _rawFps);
         }
         #endregion
     }
